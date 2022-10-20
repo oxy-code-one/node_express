@@ -52,7 +52,7 @@ mongoose.connect(
         else console.log("connected succesfully.");
     }
 );
-
-app.listen(3000,()=>{
+let listenport = process.env.PORT || 3000;
+app.listen(listenport,()=>{
     console.log("Server started at port 3000");
 });
